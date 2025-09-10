@@ -3,7 +3,7 @@
 all: echo
 
 echo: 
-	echo "Please login to bw and run 'make update'"
+	@echo "Please login to bw and run 'make update'"
 
 update: decrypt clear-bw sync-bw encrypt cleanup
 
