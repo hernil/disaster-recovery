@@ -22,5 +22,8 @@ encrypt:
 sync-bw:
 	./scripts/bw-export.sh
 
+push:
+	git push codeberg && git push origin
+
 cleanup:
 	sudo umount ramdisk && rm -rf ramdisk
